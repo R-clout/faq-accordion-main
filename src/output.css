@@ -177,6 +177,9 @@
   .contents {
     display: contents;
   }
+  .hidden {
+    display: none;
+  }
   .table {
     display: table;
   }
