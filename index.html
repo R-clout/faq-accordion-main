@@ -13,59 +13,105 @@
   <script src="https://unpkg.com/hyperscript.org@0.9.14"></script>
 </head>
 
-<body class="h-screen relative font-workSans">
-  <div class="h-[50%] bg-[url('/assets/images/background-pattern-mobile.svg')] bg-cover bg-center bg-no-repeat">
+<body class="h-screen relative font-workSans sm:overflow-hidden">
+  <div
+    class="h-[50%] bg-[url('/assets/images/background-pattern-mobile.svg')] bg-cover bg-center bg-no-repeat sm:hidden">
 
   </div>
-  <div class="h-[50%] bg-purple100">
+  <div
+    class="h-[50%] bg-[url('/assets/images/background-pattern-desktop.svg')] bg-cover bg-center bg-no-repeat max-sm:hidden">
 
   </div>
-  <div class="">
-    <div>
-      <img src="./assets/images/icon-star.svg" loading="lazy" alt="star-icon" />
-      <h1>FAQs</h1>
+
+  <div
+    class="p-4 lg:p-9 absolute max-sm:top-20 max-sm:left-0.5 max-sm:-translate-x-0.5 max-sm:-translate-y-0.5 max-sm:m-4 sm:top-[50%] sm:left-[50%] transform sm:-translate-x-[50%] sm:-translate-y-[50%] bg-white rounded-lg">
+    <div class="flex items-center gap-6">
+      <img src="./assets/images/icon-star.svg" class="w-6" loading="lazy" alt="star-icon" />
+      <h1 class="text-4xl font-bold text-purple950 md:text-6xl">FAQs</h1>
     </div>
 
     <div>
       <div>
-        <div>
-          <h2>What is Frontend Mentor and how will it help me?</h2>
-          <button _="on click toggle .hidden on next <p/>">
-            <img src="./assets/images/icon-plus.svg" />
-          </button>
-          <p>Frontend mentor offers realistic coding challenges to help developers to improve their frontend
+        <div class="border border-x-0 border-t-0 border-b-purple100 my-4 pb-2">
+          <div class="flex justify-between items-center">
+            <h2 class="font-bold text-[1.2rem] text-purple950 amx-sm:w-[70%] sm:text-[1rem] lg:text-[1.1rem]">What is Frontend Mentor and how
+              will it help me?
+            </h2>
+            <img src="./assets/images/icon-plus.svg" class="" _="on click 
+            if my @src is './assets/images/icon-plus.svg'
+            set my @src to './assets/images/icon-minus.svg' 
+            toggle .hidden on next <p/>
+            else
+            set my @src to './assets/images/icon-plus.svg' 
+            toggle .hidden on next <p/>
+            end" />
+          </div>
+          <p class="hidden text-purple500 my-2 sm:text-[0.6rem] lg:text-[0.7rem] w-[70%]">Frontend mentor offers realistic coding challenges to
+            help developers to
+            improve their
+            frontend
             coding skills with projects in HTML, CSS and JavaScript. it's suitable for all levels and ideal for
             portfolio building</p>
         </div>
-        <div>
-          <h2>What is Frontend Mentor and how will it help me?</h2>
-          <button _="on click toggle .hidden on next <p/>">
-            <img src="./assets/images/icon-plus.svg" />
-          </button>
-          <p>Frontend mentor offers realistic coding challenges to help developers to improve their frontend
-            coding skills with projects in HTML, CSS and JavaScript. it's suitable for all levels and ideal for
-            portfolio building</p>
+        <div class="border border-x-0 border-t-0 border-b-purple100 my-4 pb-2">
+          <div class="flex justify-between items-center">
+            <h2 class="font-bold text-[1.2rem] text-purple950 w-[70%] sm:text-[1rem]">Is Frontend Mentor free?</h2>
+            <img src="./assets/images/icon-plus.svg" _="on click 
+            if my @src is './assets/images/icon-plus.svg'
+            set my @src to './assets/images/icon-minus.svg' 
+            toggle .hidden on next <p/>
+            else
+            set my @src to './assets/images/icon-plus.svg' 
+            toggle .hidden on next <p/>
+            end" />
+          </div>
+          <p class="hidden text-purple500 my-2 sm:text-[0.6rem] lg:text-[1rem]">Yes, Frontend Mentor offers both free and premium
+            coding challenges,
+            with the free option
+            providing access to a range of projects suitable for all skill levels.</p>
         </div>
-        <div>
-          <h2>What is Frontend Mentor and how will it help me?</h2>
-          <button _="on click toggle .hidden on next <p/>">
-            <img src="./assets/images/icon-plus.svg" />
-          </button>
-          <p class="">Frontend mentor offers realistic coding challenges to help developers to improve their frontend
-            coding skills with projects in HTML, CSS and JavaScript. it's suitable for all levels and ideal for
-            portfolio building</p>
+        <div class="border border-x-0 border-t-0 border-b-purple100 my-4 pb-2">
+          <div class="flex justify-between items-center sm:gap-3">
+            <h2 class="font-bold text-[1.2rem] text-purple950 sm:text-[1rem]">Can I use Frontend Mentor
+              projects in my
+              portfolio?</h2>
+            <img src="./assets/images/icon-plus.svg" _="on click 
+            if my @src is './assets/images/icon-plus.svg'
+            set my @src to './assets/images/icon-minus.svg' 
+            toggle .hidden on next <p/>
+            else
+            set my @src to './assets/images/icon-plus.svg' 
+            toggle .hidden on next <p/>
+            end" />
+          </div>
+          <p class="hidden text-purple500 my-2 sm:text-[0.6rem] lg:text-[1rem]">Yes, you can use projects completed on Frontend Mentor
+            in your
+            portfolio. It's an excellent
+            way to showcase your skills to potential employers!</p>
         </div>
-        <div>
-          <h2>What is Frontend Mentor and how will it help me?</h2>
-          <button _="on click toggle .hidden on next <p/>">
-            <img src="./assets/images/icon-plus.svg" />
-          </button>
-          <p>Frontend mentor offers realistic coding challenges to help developers to improve their frontend
-            coding skills with projects in HTML, CSS and JavaScript. it's suitable for all levels and ideal for
-            portfolio building</p>
+        <div class="">
+          <div class="flex justify-between items-center">
+            <h2 class="font-bold text-[1.2rem] text-purple950 max-smw-[70%] sm:text-[1rem]">How can I get help if I'm stuck on
+              a challege
+            </h2>
+            <img src="./assets/images/icon-plus.svg" _="on click 
+            if my @src is './assets/images/icon-plus.svg'
+            set my @src to './assets/images/icon-minus.svg' 
+            toggle .hidden on next <p/>
+            else
+            set my @src to './assets/images/icon-plus.svg' 
+            toggle .hidden on next <p/>
+            end" />
+          </div>
+          <p class="hidden text-purple500 my-2 sm:text-[0.6rem] lg:text-[1rem]">The best place to get help is inside Frontend Mentor's
+            Discord
+            community. There's a help
+            channel where you can ask questions and seek support from other community members.</p>
         </div>
       </div>
     </div>
+  </div>
+  <div class="h-[100%] bg-purple100">
   </div>
 </body>
 
